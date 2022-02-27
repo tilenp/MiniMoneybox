@@ -1,0 +1,17 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Moneybox" parent="Base.Theme.Moneybox">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Base.Theme.Moneybox" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Moneybox.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Moneybox.Subtitle1</item>
+    </style>
+
+</resources>
