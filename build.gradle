@@ -2,6 +2,21 @@
 
 buildscript {
     ext.kotlin_version = '1.6.10'
+    ext {
+        dagger_version = "2.40.5"
+        lottie_version = "3.6.1"
+        mockk_version = "1.12.0"
+        mock_web_server_version = "4.9.1"
+        navigation_component_version = "2.4.1"
+        okhttp_version = "4.9.0"
+        retrofit_version = "2.9.0"
+        rxjava_retrofit_adapter_version = "3.0.0"
+        rx_android_version = "3.0.0"
+        rx_binding_version = "4.0.0"
+        rx_java_version = "3.0.13"
+        view_model_version = "2.4.1"
+    }
+
     repositories {
         google()
         mavenCentral()

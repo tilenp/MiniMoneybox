@@ -48,44 +48,43 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     /** Dagger 2 **/
-    def dagger_version = "2.40.5"
     implementation "com.google.dagger:dagger:$dagger_version"
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
     kaptTest "com.google.dagger:dagger-compiler:$dagger_version"
     kaptAndroidTest "com.google.dagger:dagger-compiler:$dagger_version"
 
     /** lottie **/
-    implementation 'com.airbnb.android:lottie:3.6.1'
+    implementation "com.airbnb.android:lottie:$lottie_version"
 
     /** MockK **/
-    testImplementation "io.mockk:mockk:1.12.0"
-    testImplementation "io.mockk:mockk-agent-jvm:1.12.0"
-    androidTestImplementation "io.mockk:mockk-android:1.12.0"
+    testImplementation "io.mockk:mockk:$mockk_version"
+    testImplementation "io.mockk:mockk-agent-jvm:$mockk_version"
+    androidTestImplementation "io.mockk:mockk-android:$mockk_version"
 
     /** Mock web server **/
-    testImplementation "com.squareup.okhttp3:mockwebserver:4.9.1"
+    testImplementation "com.squareup.okhttp3:mockwebserver:$mock_web_server_version"
 
     /** Navigation component **/
-    implementation "androidx.navigation:navigation-fragment-ktx:2.4.1"
-    implementation "androidx.navigation:navigation-ui-ktx:2.4.1"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_component_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_component_version"
 
     /** OkHttp **/
-    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
 
     /** Retrofit **/
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation "com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0"
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.github.akarnokd:rxjava3-retrofit-adapter:$rxjava_retrofit_adapter_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
 
     /** RxAndroid 3 **/
-    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    implementation "io.reactivex.rxjava3:rxandroid:$rx_android_version"
 
     /** RxBinding **/
-    implementation 'com.jakewharton.rxbinding4:rxbinding:4.0.0'
+    implementation "com.jakewharton.rxbinding4:rxbinding:$rx_binding_version"
 
     /** RxJava 3 **/
-    implementation "io.reactivex.rxjava3:rxjava:3.0.13"
+    implementation "io.reactivex.rxjava3:rxjava:$rx_java_version"
 
     /** ViewModel **/
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$view_model_version"
 }
