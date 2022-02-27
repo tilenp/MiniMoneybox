@@ -16,6 +16,7 @@ import com.example.minimoneybox.dagger.AppComponentProvider
 import com.example.minimoneybox.databinding.ActivityMainBinding
 import com.example.minimoneybox.ui.authentication.AuthenticationActivity
 import com.example.minimoneybox.utils.SchedulerProvider
+import com.example.minimoneybox.utils.setOrientationForDeviceType
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import javax.inject.Inject
 
@@ -43,6 +44,7 @@ class MainActivity : AppCompatActivity() {
         (applicationContext as AppComponentProvider).provideAppComponent().inject(this)
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
+        setOrientationForDeviceType()
         setContentView(binding.root)
         setUpViewModel()
         setUpToolbar()

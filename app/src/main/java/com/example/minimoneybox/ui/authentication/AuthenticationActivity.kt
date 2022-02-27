@@ -10,6 +10,7 @@ import com.example.minimoneybox.R
 import com.example.minimoneybox.dagger.AppComponentProvider
 import com.example.minimoneybox.databinding.ActivityAuthenticationBinding
 import com.example.minimoneybox.utils.SchedulerProvider
+import com.example.minimoneybox.utils.setOrientationForDeviceType
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import javax.inject.Inject
 
@@ -30,6 +31,7 @@ class AuthenticationActivity : AppCompatActivity() {
         (applicationContext as AppComponentProvider).provideAppComponent().inject(this)
         super.onCreate(savedInstanceState)
         binding = ActivityAuthenticationBinding.inflate(layoutInflater)
+        setOrientationForDeviceType()
         setContentView(binding.root)
         setUpViewModel()
     }
