@@ -1,8 +1,8 @@
 package com.example.minimoneybox.network
 
+import com.example.minimoneybox.API_VERSION
+import com.example.minimoneybox.APP_ID
 import com.example.minimoneybox.BuildConfig
-import com.example.minimoneybox.utils.API_VERSION
-import com.example.minimoneybox.utils.APP_ID
 import okhttp3.Interceptor
 import okhttp3.Request
 import okhttp3.Response

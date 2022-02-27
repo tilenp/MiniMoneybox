@@ -1,4 +1,4 @@
-package com.example.minimoneybox.utils
+package com.example.minimoneybox
 
 /** MoneyBox API **/
 const val BASE_MONEYBOX_URL = "https://api-test01.moneyboxapp.com"

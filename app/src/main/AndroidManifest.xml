@@ -25,6 +25,7 @@
         </activity>
         <activity
             android:name=".ui.authentication.AuthenticationActivity"
+            android:launchMode="singleTask"
             android:windowSoftInputMode="stateVisible|adjustResize" />
     </application>
 

@@ -2,6 +2,7 @@ package com.example.minimoneybox.ui.account.user_accounts
 
 import androidx.lifecycle.ViewModel
 import com.example.minimoneybox.R
+import com.example.minimoneybox.THROTTLE_INTERVAL
 import com.example.minimoneybox.model.local.InvestorProducts
 import com.example.minimoneybox.model.response.Response
 import com.example.minimoneybox.repository.AuthenticationRepository
@@ -9,7 +10,6 @@ import com.example.minimoneybox.repository.InvestorProductsRepository
 import com.example.minimoneybox.repository.UserRepository
 import com.example.minimoneybox.utils.ErrorMessageHandler
 import com.example.minimoneybox.utils.SchedulerProvider
-import com.example.minimoneybox.utils.THROTTLE_INTERVAL
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.disposables.CompositeDisposable

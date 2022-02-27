@@ -1,9 +1,9 @@
 package com.example.minimoneybox.network
 
+import com.example.minimoneybox.BASE_MONEYBOX_URL
 import com.example.minimoneybox.model.request.RequestOneOffPayments
 import com.example.minimoneybox.model.response.ResponseInvestorsProduct
 import com.example.minimoneybox.model.response.ResponseOneOffPayments
-import com.example.minimoneybox.utils.BASE_MONEYBOX_URL
 import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
 import io.reactivex.rxjava3.core.Single
 import okhttp3.OkHttpClient
