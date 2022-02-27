@@ -1,0 +1,216 @@
+{
+  "MoneyboxEndOfTaxYear": "2022-03-30T12:00:00.000",
+  "TotalPlanValue": 63096.460000,
+  "TotalEarnings": 6402.430000,
+  "TotalContributionsNet": 56709.73,
+  "TotalEarningsAsPercentage": 11.29,
+  "ProductResponses": [
+    {
+      "Id": 6137,
+      "AssetBoxGlobalId": "65da7941-f1cb-443d-926a-45e52ac214d3",
+      "PlanValue": 32652.26,
+      "Moneybox": 560.00,
+      "SubscriptionAmount": 40.00,
+      "TotalFees": 76.49,
+      "IsSelected": true,
+      "IsFavourite": false,
+      "CollectionDayMessage": "This will be collected at midday today",
+      "WrapperId": "24a41343-86b4-4d93-8765-82236af7c56d",
+      "IsCashBox": false,
+      "PendingInstantBankTransferAmount": 0.0,
+      "AssetBox": {
+        "Title": "Investments"
+      },
+      "Product": {
+        "Id": 1,
+        "Name": "ISA",
+        "CategoryType": "Investment",
+        "Type": "Isa",
+        "FriendlyName": "Stocks & Shares ISA",
+        "CanWithdraw": true,
+        "ProductHexCode": "#c5d561",
+        "AnnualLimit": 20000.00,
+        "DepositLimit": 0.00,
+        "BonusMultiplier": 0.00,
+        "MinimumWeeklyDeposit": 2.0,
+        "MaximumWeeklyDeposit": 400.0,
+        "Documents": {
+          "KeyFeaturesUrl": "https://api-test02.moneyboxapp.com/docs/KeyFeaturesDocumentAll"
+        },
+        "State": "None",
+        "WrapperDefinitionGlobalId": "ecdf7923-4f30-4e9d-84bc-1e71d3a53367"
+      },
+      "InvestorAccount": {
+        "ContributionsNet": 29225.00,
+        "EarningsNet": 3427.26,
+        "EarningsAsPercentage": 11.73
+      },
+      "Personalisation": {
+        "QuickAddDeposit": {
+          "Amount": 100.00
+        },
+        "HideAccounts": {
+          "Enabled": false,
+          "IsHidden": false,
+          "Sequence": 1
+        }
+      },
+      "Contributions": {
+        "Status": "Enabled"
+      },
+      "MoneyboxCircle": {
+        "State": "None"
+      },
+      "IsSwitchVisible": false,
+      "State": "None",
+      "DateCreated": "2020-04-08T12:26:40.417"
+    },
+    {
+      "Id": 6136,
+      "AssetBoxGlobalId": "fd2b898a-2d30-41a2-90c3-2175ceddcfab",
+      "PlanValue": 3514.490000,
+      "Moneybox": 0.00,
+      "SubscriptionAmount": 25.00,
+      "TotalFees": 0.00,
+      "IsSelected": false,
+      "IsFavourite": false,
+      "CollectionDayMessage": "This will be collected at midday today",
+      "WrapperId": "690687b7-3dcd-42b4-af13-ec62f4d151a1",
+      "IsCashBox": false,
+      "PendingInstantBankTransferAmount": 0.0,
+      "AssetBox": {
+        "Title": "Cash"
+      },
+      "Product": {
+        "Lisa": {
+          "MaximumBonus": 1000.0000
+        },
+        "Id": 7,
+        "Name": "Lisa Plus",
+        "CategoryType": "Cash",
+        "Type": "Lisa",
+        "FriendlyName": "Lifetime ISA",
+        "CanWithdraw": false,
+        "ProductHexCode": "#49bfbd",
+        "AnnualLimit": 4000.00,
+        "DepositLimit": 0.00,
+        "BonusMultiplier": 0.25,
+        "MinimumWeeklyDeposit": 2.0,
+        "MaximumWeeklyDeposit": 400.0,
+        "InterestRate": "1% AER",
+        "InterestRateAmount": 0.010000,
+        "LogoUrl": "https://assets.moneyboxapp.com/images/app-assets/InvestecIconRebrand.png",
+        "Documents": {
+          "KeyFeaturesUrl": "https://api-test02.moneyboxapp.com/docs/KeyFeaturesDocumentAll"
+        },
+        "State": "None",
+        "WrapperDefinitionGlobalId": "7b98e517-7a1f-4526-8266-b8ce0b9f8199",
+        "Fund": {
+          "FundId": 32,
+          "Name": "Investec",
+          "LogoUrl": "https://assets.moneyboxapp.com/images/app-assets/InvestecIconRebrand.png",
+          "IsFundDMB": false
+        }
+      },
+      "InvestorAccount": {
+        "TodaysInterest": 0.0292,
+        "ContributionsNet": 3496.73,
+        "EarningsNet": 33.460000,
+        "EarningsAsPercentage": 0.49
+      },
+      "Personalisation": {
+        "QuickAddDeposit": {
+          "Amount": 100.00
+        },
+        "HideAccounts": {
+          "Enabled": false,
+          "IsHidden": false,
+          "Sequence": 2
+        }
+      },
+      "Contributions": {
+        "Status": "Enabled"
+      },
+      "MoneyboxCircle": {
+        "State": "None"
+      },
+      "IsSwitchVisible": false,
+      "State": "None",
+      "DateCreated": "2020-04-08T12:26:19.857"
+    }
+  ],
+  "Accounts": [
+    {
+      "Type": "Isa",
+      "Name": "Stocks & Shares ISA",
+      "DeepLinkIdentifier": "Isa",
+      "Wrapper": {
+        "Id": "24a41343-86b4-4d93-8765-82236af7c56d",
+        "DefinitionGlobalId": "ecdf7923-4f30-4e9d-84bc-1e71d3a53367",
+        "TotalValue": 32652.260000,
+        "TotalContributions": 29225.00,
+        "EarningsNet": 3427.260000,
+        "EarningsAsPercentage": 11.73,
+        "Returns": {
+          "Simple": 11.73,
+          "Lifetime": 23.340000,
+          "Annualised": 12.087500
+        }
+      },
+      "Milestone": {
+        "InitialStage": "investments_initial",
+        "EndStage": "investments_initial",
+        "EndStageId": 2
+      },
+      "HasCollections": true
+    },
+    {
+      "Type": "Lisa",
+      "Name": "Lifetime ISA",
+      "DeepLinkIdentifier": "Lisa",
+      "Wrapper": {
+        "Id": "690687b7-3dcd-42b4-af13-ec62f4d151a1",
+        "DefinitionGlobalId": "7b98e517-7a1f-4526-8266-b8ce0b9f8199",
+        "TotalValue": 3514.490000,
+        "TotalContributions": 7920.00,
+        "EarningsNet": 33.460000,
+        "EarningsAsPercentage": 0.49,
+        "Returns": {
+          "Simple": 0.49,
+          "Lifetime": -24.250000,
+          "Annualised": -14.002400
+        }
+      },
+      "Milestone": {
+        "InitialStage": "investments_initial",
+        "EndStage": "investments_initial",
+        "EndStageId": 2
+      },
+      "HasCollections": true
+    },
+    {
+      "Type": "Gia",
+      "Name": "General Investment Account",
+      "DeepLinkIdentifier": "Gia",
+      "Wrapper": {
+        "Id": "9443dbbf-96db-4114-9966-517e2054af32",
+        "DefinitionGlobalId": "b1a032bd-bbab-4e1e-b059-4af89699abee",
+        "TotalValue": 26929.710000,
+        "TotalContributions": 23988.00,
+        "EarningsNet": 2941.710000,
+        "EarningsAsPercentage": 12.26,
+        "Returns": {
+          "Simple": 12.26,
+          "Lifetime": 21.310000,
+          "Annualised": 11.080200
+        }
+      },
+      "Milestone": {
+        "InitialStage": "investments_initial",
+        "EndStage": "investments_initial",
+        "EndStageId": 2
+      },
+      "HasCollections": true
+    }
+  ]
+}
