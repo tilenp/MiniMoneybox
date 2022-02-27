@@ -3,6 +3,7 @@ package com.example.minimoneybox.dagger
 import android.content.Context
 import com.example.minimoneybox.dagger.module.*
 import com.example.minimoneybox.ui.account.MainActivity
+import com.example.minimoneybox.ui.account.individual_account.IndividualAccountFragment
 import com.example.minimoneybox.ui.account.user_accounts.UserAccountsFragment
 import com.example.minimoneybox.ui.authentication.AuthenticationActivity
 import com.example.minimoneybox.ui.authentication.login.LoginFragment
@@ -34,4 +35,5 @@ interface AppComponent {
 
     fun inject(fragment: LoginFragment)
     fun inject(fragment: UserAccountsFragment)
+    fun inject(fragment: IndividualAccountFragment)
 }

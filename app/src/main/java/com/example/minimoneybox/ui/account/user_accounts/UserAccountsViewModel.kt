@@ -69,15 +69,15 @@ class UserAccountsViewModel @Inject constructor(
     }
 
     private fun observeProductClick() {
-//        compositeDisposable.add(
-//            userActionDispatcher
-//                .throttleFirst(THROTTLE_INTERVAL, TimeUnit.MILLISECONDS, schedulerProvider.interval())
-//                .filter { it is UserAction.OnProductClick }
-//                .map { (it as UserAction.OnProductClick).productId }
-//                .flatMapSingle { investorProductsRepository.selectProduct(it)
-//                    .andThen(Single.just(R.id.action_userAccountsFragment_to_individualAccountFragment)) }
-//                .subscribe({ userActionObserver.onNext(ProductsUIState.Navigate(it)) },{})
-//        )
+        compositeDisposable.add(
+            userActionDispatcher
+                .throttleFirst(THROTTLE_INTERVAL, TimeUnit.MILLISECONDS, schedulerProvider.interval())
+                .filter { it is UserAction.OnProductClick }
+                .map { (it as UserAction.OnProductClick).productId }
+                .flatMapSingle { investorProductsRepository.selectProduct(it)
+                    .andThen(Single.just(R.id.action_userAccountsFragment_to_individualAccountFragment)) }
+                .subscribe({ userActionObserver.onNext(ProductsUIState.Navigate(it)) },{})
+        )
     }
 
     private fun updateContent(userName: String, investorProducts: InvestorProducts): ProductsContent {

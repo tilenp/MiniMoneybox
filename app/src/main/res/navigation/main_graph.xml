@@ -10,5 +10,17 @@
         android:name="com.example.minimoneybox.ui.account.user_accounts.UserAccountsFragment"
         android:label="@string/User_Accounts"
         tools:layout="@layout/fragment_user_accounts" >
+        <action
+            android:id="@+id/action_userAccountsFragment_to_individualAccountFragment"
+            app:destination="@id/individualAccountFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
+    <fragment
+        android:id="@+id/individualAccountFragment"
+        android:name="com.example.minimoneybox.ui.account.individual_account.IndividualAccountFragment"
+        android:label="@string/Individual_Account"
+        tools:layout="@layout/fragment_individual_account"/>
 </navigation>
