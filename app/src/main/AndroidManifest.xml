@@ -23,6 +23,9 @@
             </intent-filter>
 
         </activity>
+        <activity
+            android:name=".ui.authentication.AuthenticationActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
     </application>
 
 </manifest>
