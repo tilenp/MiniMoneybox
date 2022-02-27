@@ -2,6 +2,8 @@ package com.example.minimoneybox.dagger
 
 import android.content.Context
 import com.example.minimoneybox.dagger.module.*
+import com.example.minimoneybox.ui.account.MainActivity
+import com.example.minimoneybox.ui.account.user_accounts.UserAccountsFragment
 import com.example.minimoneybox.ui.authentication.AuthenticationActivity
 import com.example.minimoneybox.ui.authentication.login.LoginFragment
 import dagger.BindsInstance
@@ -27,7 +29,9 @@ interface AppComponent {
         fun create(@BindsInstance applicationContext: Context): AppComponent
     }
 
+    fun inject(activity: MainActivity)
     fun inject(activity: AuthenticationActivity)
 
     fun inject(fragment: LoginFragment)
+    fun inject(fragment: UserAccountsFragment)
 }

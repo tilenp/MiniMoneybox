@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_button_primary"
+    android:paddingBottom="@dimen/spacing_16">
+
+    <ImageView
+        android:id="@+id/arrow_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_16"
+        android:src="@drawable/outline_chevron_right_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/account_name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_16"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:layout_marginEnd="@dimen/spacing_16"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@id/arrow_image_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Stocks and Shares ISA" />
+
+    <TextView
+        android:id="@+id/plan_value_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_16"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:layout_marginEnd="@dimen/spacing_16"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@id/arrow_image_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/account_name_text_view"
+        tools:text="Plan Value £1000000000" />
+
+    <TextView
+        android:id="@+id/moneybox_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_16"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:layout_marginEnd="@dimen/spacing_16"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@id/arrow_image_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plan_value_text_view"
+        tools:text="Moneybox £10000000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

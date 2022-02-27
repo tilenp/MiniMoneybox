@@ -4,6 +4,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.minimoneybox.dagger.MyViewModelFactory
 import com.example.minimoneybox.dagger.ViewModelKey
+import com.example.minimoneybox.ui.account.AccountViewModel
+import com.example.minimoneybox.ui.account.user_accounts.UserAccountsViewModel
 import com.example.minimoneybox.ui.authentication.AuthenticationViewModel
 import com.example.minimoneybox.ui.authentication.login.LoginViewModel
 import dagger.Binds
@@ -25,4 +27,14 @@ interface ViewModelModule {
     @IntoMap
     @ViewModelKey(LoginViewModel::class)
     fun bindLoginViewModel(viewModel: LoginViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(AccountViewModel::class)
+    fun bindAccountViewModel(viewModel: AccountViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(UserAccountsViewModel::class)
+    fun bindUserAccountsViewModel(viewModel: UserAccountsViewModel): ViewModel
 }
