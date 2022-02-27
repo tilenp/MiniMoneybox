@@ -1,5 +1,6 @@
 package com.example.minimoneybox.network
 
+import com.example.minimoneybox.BuildConfig
 import com.example.minimoneybox.utils.API_VERSION
 import com.example.minimoneybox.utils.APP_ID
 import okhttp3.Interceptor
@@ -20,7 +21,7 @@ class HeadersInterceptor @Inject constructor() : Interceptor {
         return newBuilder()
             .header("AppId", APP_ID)
             .header("Content-Type", "application/json")
-            .header("appVersion", "7.15.0")
+            .header("appVersion", BuildConfig.VERSION_NAME)
             .header("apiVersion", API_VERSION)
             .build()
     }
